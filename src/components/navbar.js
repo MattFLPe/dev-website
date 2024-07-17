@@ -4,15 +4,16 @@ function NavigationBar() {
     return (
         <div className="nav-bar">
             <div className="container">
-                <nav class="navbar navbar-expand-lg" style={{background: "rgb(15, 15, 16)"}}>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <nav className="navbar" style={{background: "rgb(15, 15, 16)"}}>
+                
                     <div className="navbar-nav">
-                        <a class="nav-item nav-link active" href="./home.js">Home<span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">Projects</a>
-                        <a class="nav-item nav-link" href="#">Contact</a>
-                        <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                        <div className='container-nav'>
+                        <a class="nav-item active" href="./home.js"><i class="fa fa-home"></i></a>
+                        <a class="nav-item" target="_blank" href="https://github.com/MattFLPe"><i class="fab fa-github"></i></a>
+                        <a class="nav-item" target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+                        <a class="nav-item" href="#"><i class="fa fa-user"></i></a>
+                        </div>
                     </div>
-                </div>
                 </nav>
             </div>
         </div>

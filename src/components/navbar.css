@@ -1,0 +1,69 @@
+.container-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-around;
+    text-align: center;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  }
+  
+  a {
+    color: lime;
+  }
+  
+  .container-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+   
+    transform: translate(-50%, -50%);
+  }
+  
+  li, a {
+    top: 50px;
+    left: 150px;
+    position: relative; 
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+  }
+  
+  a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: lime;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+  
+  a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px lime;
+  }
+  
+  a:hover {
+    color: lime;
+    box-shadow: 0 0 5px lime;
+    text-shadow: 0 0 5px lime;
+  }

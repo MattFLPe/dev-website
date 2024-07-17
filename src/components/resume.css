@@ -1,0 +1,12 @@
+
+  
+  body {
+    background-color: rgb(15, 15, 16);
+    text-align: center;
+  }
+
+  .resume-container {
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    color: lime;
+    margin: 100px;
+  }
